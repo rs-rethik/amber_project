@@ -1,8 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Home
         </title>
+        <style>
+           body{
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lucida Console", "Courier New", monospace;
+           }
+           header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+           }
+           .navi a{
+            position: relative;
+            font-size: 1.1em;
+            color: #570fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+           }
+        </style>
     </head>
+    <body>
+        <header>
+            <img class="logo" src="logo.png">
+            <nav class="navi">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Current Missing</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+    </body>
 </html>
